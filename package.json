@@ -1,0 +1,28 @@
+{
+  "name": "labexp-app",
+  "version": "1.0.0",
+  "description": "Plataforma integral de empleo y desarrollo profesional para estudiantes universitarios y recién egresados sin experiencia.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "empleo-joven",
+    "primer-empleo",
+    "sin-experiencia",
+    "estudiantes-universitarios",
+    "inteligencia-artificial",
+    "simulador-entrevistas",
+    "cv-inteligente"
+  ],
+  "author": "Equipo Multidisciplinario LABEXP",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/core": "^8.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^10.15.0"
+  }
+}

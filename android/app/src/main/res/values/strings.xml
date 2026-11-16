@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LABEXP</string>
+    <string name="title_activity_main">LABEXP</string>
+    <string name="package_name">com.labexp.app</string>
+    <string name="custom_url_scheme">com.labexp.app</string>
+</resources>

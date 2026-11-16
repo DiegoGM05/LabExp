@@ -1,0 +1,1042 @@
+{
+  "settings": {
+    "appName": "LABEXP",
+    "allowGuestDemo": true,
+    "aiProvider": "local_simulator",
+    "aiApiKeyConfigured": false
+  },
+  "roles": [
+    {
+      "id": "candidate",
+      "name": "Estudiante o Recién Egresado",
+      "description": "Acceso a empleo sin experiencia requerida, creador de CV, asistente IA, simulador y cursos."
+    },
+    {
+      "id": "recruiter",
+      "name": "Empresa o Reclutador",
+      "description": "Publicación de vacantes, revisión de postulaciones y candidatos con talento joven."
+    },
+    {
+      "id": "admin",
+      "name": "Administrador de Plataforma",
+      "description": "Supervisión global, verificación de empresas, moderación y auditoría."
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-cand-1",
+      "email": "sofia.ramirez@alumnos.unam.mx",
+      "passwordHash": "password123",
+      "fullName": "Sofía Ramírez Galindo",
+      "role": "candidate",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "status": "active",
+      "createdAt": "2026-09-10T10:00:00Z",
+      "privacyConsent": true,
+      "privacyConsentDate": "2026-09-10T10:00:00Z"
+    },
+    {
+      "id": "usr-rec-1",
+      "email": "reclutamiento@techinnovamx.com",
+      "passwordHash": "password123",
+      "fullName": "Carlos Mendoza Alarcón",
+      "role": "recruiter",
+      "companyId": "comp-1",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+      "status": "active",
+      "createdAt": "2026-08-15T09:30:00Z",
+      "privacyConsent": true,
+      "privacyConsentDate": "2026-08-15T09:30:00Z"
+    },
+    {
+      "id": "usr-adm-1",
+      "email": "admin@labexp.mx",
+      "passwordHash": "admin123",
+      "fullName": "Lic. Valeria Morales",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+      "status": "active",
+      "createdAt": "2026-08-01T08:00:00Z",
+      "privacyConsent": true,
+      "privacyConsentDate": "2026-08-01T08:00:00Z"
+    }
+  ],
+  "profiles": [
+    {
+      "userId": "usr-cand-1",
+      "headline": "Estudiante de Ingeniería en Computación | Apasionada por Desarrollo Web y Análisis de Datos",
+      "bio": "Estudiante de 8vo semestre de Ingeniería en Computación en la UNAM. Sin experiencia laboral formal en empresas pero con sólida formación teórica y práctica en proyectos universitarios, hackathones y desarrollo de software colaborativo.",
+      "phone": "+52 55 4123 9876",
+      "location": "Ciudad de México, México",
+      "university": "Universidad Nacional Autónoma de México (UNAM)",
+      "degree": "Ingeniería en Computación",
+      "academicLevel": "Licenciatura en curso",
+      "currentSemester": "8vo Semestre",
+      "graduationYear": "2027",
+      "interestArea": "Tecnología, Desarrollo Web y Software",
+      "preferredWorkMode": "Híbrido o Remoto",
+      "preferredJobType": "Prácticas profesionales / Primer empleo",
+      "completionPercentage": 85,
+      "shareProfileWithRecruiters": true,
+      "technicalSkills": [
+        "JavaScript (ES6+)",
+        "Python",
+        "React",
+        "HTML5 & CSS3",
+        "Bases de Datos Relacionales (SQL)",
+        "Git y GitHub",
+        "REST APIs"
+      ],
+      "softSkills": [
+        "Trabajo en equipo multidisciplinario",
+        "Pensamiento analítico y resolución de problemas",
+        "Comunicación asertiva",
+        "Adaptabilidad al cambio",
+        "Proactividad e iniciativa"
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio-Avanzado (B2 - Comprensión técnica fluida)"
+        }
+      ],
+      "academicCompetencies": [
+        "Desarrollo de algoritmos de optimización estructurados",
+        "Diseño arquitectónico de bases de datos relacionales normalizadas",
+        "Metodologías ágiles Scrum en proyectos de aula",
+        "Documentación técnica de requerimientos y casos de uso"
+      ],
+      "academicProjects": [
+        {
+          "id": "proj-1",
+          "title": "Portal de Monitoreo Comunitario y Reciclaje Urbano",
+          "role": "Líder de desarrollo Frontend y Maquetación",
+          "period": "Enero - Junio 2026",
+          "description": "Desarrollo de una plataforma web responsive para registrar y geolocalizar puntos de acopio de residuos reciclables en la alcaldía Coyoacán.",
+          "technologies": [
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Leaflet Maps API"
+          ],
+          "outcomes": "Presentado como proyecto final con mención honorífica en la cátedra de Ingeniería de Software."
+        },
+        {
+          "id": "proj-2",
+          "title": "Sistema de Gestión de Préstamos para Biblioteca Universitaria",
+          "role": "Desarrolladora Full Stack",
+          "period": "Agosto - Diciembre 2025",
+          "description": "Diseño del modelo entidad-relación y desarrollo de interfaz gráfica para automatizar el préstamo e inventario de 1,200 libros.",
+          "technologies": [
+            "Python",
+            "SQLite",
+            "Figma",
+            "Bootstrap"
+          ],
+          "outcomes": "Implementado a nivel piloto en la sala de lectura de la facultad."
+        }
+      ],
+      "extracurriculars": [
+        {
+          "id": "extra-1",
+          "title": "Miembro activo de la Rama Estudiantil IEEE / ACM",
+          "role": "Coordinadora de Talleres Técnicos para Nuevos Ingresos",
+          "period": "2025 - Presente",
+          "description": "Organización de 4 talleres de introducción a la programación para alumnos de 1er y 2do semestre."
+        },
+        {
+          "id": "extra-2",
+          "title": "Voluntariado en Alfabetización Digital para Adultos Mayores",
+          "role": "Instructora voluntaria",
+          "period": "Verano 2025",
+          "description": "Enseñanza de uso básico de herramientas digitales, correo electrónico y navegación segura a 35 personas."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Introducción al Desarrollo Web Frontend",
+          "issuer": "Fundación Carlos Slim / Académica",
+          "year": "2025",
+          "verified": true
+        },
+        {
+          "name": "Fundamentos de Bases de Datos SQL",
+          "issuer": "Coursera / UNAM",
+          "year": "2026",
+          "verified": true
+        }
+      ],
+      "workExperience": []
+    }
+  ],
+  "companies": [
+    {
+      "id": "comp-1",
+      "name": "TechInnova México",
+      "legalName": "TechInnova Soluciones Digitales S.A.P.I. de C.V.",
+      "industry": "Tecnología y Desarrollo de Software",
+      "logo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=120&q=80",
+      "verified": true,
+      "verificationDate": "2026-08-20T12:00:00Z",
+      "location": "Ciudad de México (Reforma) / Esquema Híbrido",
+      "description": "Empresa especializada en soluciones de transformación digital, banca abierta e inteligencia artificial aplicada para empresas en América Latina. Comprometidos con el desarrollo de talento joven y programas de semillero profesional.",
+      "website": "https://techinnovamx.com",
+      "foundedYear": 2019,
+      "size": "50-150 colaboradores"
+    },
+    {
+      "id": "comp-2",
+      "name": "Grupo Financiero Aurora",
+      "legalName": "Banco Aurora Institución de Banca Múltiple",
+      "industry": "Banca, Finanzas y Fintech",
+      "logo": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=120&q=80",
+      "verified": true,
+      "verificationDate": "2026-07-15T10:00:00Z",
+      "location": "Guadalajara, Jalisco / Remoto",
+      "description": "Institución financiera innovadora enfocado en inclusión de jóvenes al ecosistema financiero mediante productos digitales y microcréditos para emprendedores.",
+      "website": "https://grupoaurora.mx",
+      "foundedYear": 2016,
+      "size": "250-500 colaboradores"
+    },
+    {
+      "id": "comp-3",
+      "name": "BioSalud Diagnósticos",
+      "legalName": "Laboratorios BioSalud Integral S.A. de C.V.",
+      "industry": "Salud, Medicina y Biotecnología",
+      "logo": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=120&q=80",
+      "verified": true,
+      "verificationDate": "2026-09-01T09:00:00Z",
+      "location": "Monterrey, Nuevo León / Presencial",
+      "description": "Red de laboratorios de análisis clínicos e investigación diagnóstica con programas especiales de servicio social y prácticas para estudiantes de medicina, química y enfermería.",
+      "website": "https://biosaludmex.com",
+      "foundedYear": 2012,
+      "size": "100-250 colaboradores"
+    },
+    {
+      "id": "comp-4",
+      "name": "NovaRetail LATAM",
+      "legalName": "Nova Logística y Comercio Digital S. de R.L.",
+      "industry": "Comercio Electrónico y Logística",
+      "logo": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=120&q=80",
+      "verified": true,
+      "verificationDate": "2026-09-05T14:30:00Z",
+      "location": "Querétaro, Qro. / Esquema Híbrido",
+      "description": "Líder regional en fulfillment y logística de última milla para e-commerce. Busca estudiantes apasionados por supply chain, analítica de datos y operaciones.",
+      "website": "https://novaretail.lat",
+      "foundedYear": 2021,
+      "size": "200-400 colaboradores"
+    },
+    {
+      "id": "comp-5",
+      "name": "Consultores Nexus Talent",
+      "legalName": "Nexus Estrategias Humanas S.C.",
+      "industry": "Recursos Humanos y Consultoría",
+      "logo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=120&q=80",
+      "verified": false,
+      "verificationDate": null,
+      "location": "Puebla, Pue. / Remoto",
+      "description": "Consultora de reclutamiento boutique en proceso de auditoría y validación documental en LABEXP.",
+      "website": "https://nexusconsultores.mx",
+      "foundedYear": 2024,
+      "size": "10-25 colaboradores"
+    }
+  ],
+  "vacancies": [
+    {
+      "id": "vac-1",
+      "title": "Desarrollador Junior / Trainee de Frontend Web",
+      "companyId": "comp-1",
+      "companyName": "TechInnova México",
+      "category": "Programas trainee",
+      "jobType": "Tiempo completo",
+      "workMode": "Híbrido",
+      "location": "Ciudad de México (Reforma)",
+      "salary": "$16,000 - $20,000 MXN mensuales brutos",
+      "academicLevel": "Estudiante de últimos semestres o recién egresado",
+      "experienceRequired": "Sin experiencia laboral formal requerida. Valoramos proyectos universitarios y portafolio personal.",
+      "area": "Ingeniería y Tecnologías de Información",
+      "publishedAt": "2026-11-10T09:00:00Z",
+      "isDemo": true,
+      "verifiedSource": true,
+      "description": "Buscamos a una persona apasionada por el desarrollo de interfaces modernas y accesibles para sumarse a nuestro programa Trainee 2027. Recibirás mentoría directa de desarrolladores Senior, plan de capacitación continua y asignación a productos digitales de alto impacto.",
+      "responsibilities": [
+        "Participar en el maquetado e implementación de componentes con HTML5, CSS3 y JavaScript moderno.",
+        "Colaborar en revisiones de código y ceremonias ágiles (Daily, Sprint Planning).",
+        "Aprender y aplicar buenas prácticas de UI/UX, accesibilidad web y rendimiento.",
+        "Consumir APIs RESTful desarrolladas por el equipo de backend."
+      ],
+      "requirements": [
+        "Estar cursando últimos semestres o ser recién egresado de Ing. en Computación, Sistemas, Informática o carreras afines.",
+        "Conocimientos fundamentales de JavaScript, HTML5 y CSS.",
+        "Familiaridad básica con Git (commits, branches, pull requests).",
+        "Ganas genuinas de aprender, trabajar en equipo y capacidad de resolver problemas de forma autónoma.",
+        "No se requiere experiencia laboral en empresas previa."
+      ],
+      "benefits": [
+        "Plan de carrera estructurado y posibilidad de contratación por tiempo indefinido al 6to mes.",
+        "Seguro de gastos médicos mayores y seguro de vida.",
+        "Bono anual por objetivos y vales de despensa ($2,500 MXN).",
+        "Presupuesto anual de $15,000 MXN para certificaciones y cursos técnicos.",
+        "Viernes corto (jornada hasta las 2:00 PM)."
+      ],
+      "matchingKeywords": [
+        "JavaScript",
+        "React",
+        "HTML5",
+        "CSS3",
+        "Git",
+        "SQL",
+        "Trabajo en equipo",
+        "Resolución de problemas"
+      ]
+    },
+    {
+      "id": "vac-2",
+      "title": "Practicante de Pruebas de Software (QA Tester Becario)",
+      "companyId": "comp-1",
+      "companyName": "TechInnova México",
+      "category": "Prácticas profesionales",
+      "jobType": "Medio tiempo",
+      "workMode": "Remoto",
+      "location": "Remoto (Nacional - México)",
+      "salary": "$8,500 MXN mensuales de apoyo económico",
+      "academicLevel": "Estudiantes a partir de 6to semestre",
+      "experienceRequired": "Sin experiencia previa. Capacitación desde cero.",
+      "area": "Ingeniería y Tecnologías de Información",
+      "publishedAt": "2026-11-12T11:00:00Z",
+      "isDemo": true,
+      "verifiedSource": true,
+      "description": "Oportunidad de prácticas profesionales de 6 meses para estudiantes interesados en calidad de software, pruebas funcionales, automatización inicial y documentación de casos de prueba.",
+      "responsibilities": [
+        "Diseñar casos de prueba basados en historias de usuario.",
+        "Ejecutar pruebas manuales funcionales en ambientes de desarrollo.",
+        "Reportar incidencias y bugs en Jira con pasos de reproducción claros.",
+        "Aprender conceptos básicos de automatización de pruebas con Cypress/Playwright."
+      ],
+      "requirements": [
+        "Estudiante activo con cobertura de seguro facultativo vigente.",
+        "Disponibilidad de 4 a 5 horas diarias por la mañana o por la tarde.",
+        "Atención al detalle y comunicación clara escrita.",
+        "Manejo de suites de ofimática y pensamiento lógico."
+      ],
+      "benefits": [
+        "Apoyo económico mensual puntual.",
+        "Liberación oficial de prácticas profesionales universitarias.",
+        "Equipo de cómputo proporcionado para trabajo remoto.",
+        "Certificación ISTQB Foundation financiada al 100% al completar el periodo."
+      ],
+      "matchingKeywords": [
+        "QA",
+        "Pruebas",
+        "Jira",
+        "Atención al detalle",
+        "Comunicación asertiva",
+        "Pensamiento analítico"
+      ]
+    },
+    {
+      "id": "vac-3",
+      "title": "Analista Trainee de Datos y Riesgos Financieros",
+      "companyId": "comp-2",
+      "companyName": "Grupo Financiero Aurora",
+      "category": "Programas trainee",
+      "jobType": "Tiempo completo",
+      "workMode": "Híbrido",
+      "location": "Guadalajara, Jal. / CDMX",
+      "salary": "$18,500 - $22,000 MXN mensuales brutos",
+      "academicLevel": "Recién egresados o graduación en los próximos 6 meses",
+      "experienceRequired": "Sin experiencia previa requerida. Evaluación basada en caso práctico de análisis cuantitativo.",
+      "area": "Finanzas y Analítica de Datos",
+      "publishedAt": "2026-11-08T15:00:00Z",
+      "isDemo": true,
+      "verifiedSource": true,
+      "description": "Forma parte del equipo de Inteligencia de Negocio y Riesgos Financieros de Banco Aurora. Ayudarás a modelar perfiles de crédito para emprendedores y jóvenes que tramitan su primera tarjeta.",
+      "responsibilities": [
+        "Extraer y consolidar datos transaccionales con consultas SQL.",
+        "Crear tableros de control ejecutivos en Power BI y Tableau.",
+        "Identificar tendencias de comportamiento de pago y detección de anomalías.",
+        "Participar en mesas de trabajo con las áreas de producto e innovación digital."
+      ],
+      "requirements": [
+        "Egresados de Actuaría, Economía, Finanzas, Ing. Industrial, Matemáticas Aplicadas o Computación.",
+        "Dominio de Excel avanzado y nociones de SQL o Python para análisis de datos.",
+        "Curiosidad analítica y pasión por resolver problemas de negocio.",
+        "Disponibilidad de horario completo."
+      ],
+      "benefits": [
+        "Contratación directa con prestaciones bancarias superiores a la ley.",
+        "30 días de aguinaldo y fondo de ahorro al 13%.",
+        "Plan de rotación por distintas áreas de fintech durante el primer año.",
+        "Subsidio de comedor y convenios universitarios para posgrado."
+      ],
+      "matchingKeywords": [
+        "SQL",
+        "Excel",
+        "Python",
+        "Power BI",
+        "Finanzas",
+        "Pensamiento analítico",
+        "Resolución de problemas"
+      ]
+    },
+    {
+      "id": "vac-4",
+      "title": "Servicio Social en Innovación Digital y Alfabetización Tecnológica",
+      "companyId": "comp-1",
+      "companyName": "TechInnova México",
+      "category": "Servicio social",
+      "jobType": "Medio tiempo",
+      "workMode": "Híbrido",
+      "location": "Ciudad de México",
+      "salary": "$5,000 MXN mensuales como beca de transporte",
+      "academicLevel": "Estudiantes con más del 70% de créditos cubiertos",
+      "experienceRequired": "Sin experiencia laboral. Requisito de servicio social universitario.",
+      "area": "Responsabilidad Social e Innovación",
+      "publishedAt": "2026-11-14T10:00:00Z",
+      "isDemo": true,
+      "verifiedSource": true,
+      "description": "Programa oficial de vinculación con la comunidad para apoyar a microempresarios locales a digitalizar sus catálogos y adoptar pagos electrónicos seguros.",
+      "responsibilities": [
+        "Capacitar a comerciantes en uso de herramientas digitales básicas.",
+        "Generar material didáctico audiovisual e infografías sencillas.",
+        "Registrar indicadores de impacto social del programa.",
+        "Brindar asesoría técnica de primer nivel."
+      ],
+      "requirements": [
+        "Estudiantes activos de carreras afines a Tecnología, Administración, Comunicación o Pedagogía.",
+        "Carta de presentación para servicio social expedida por la universidad.",
+        "Empatía, vocación de servicio y paciencia al explicar temas técnicos.",
+        "Horario flexible de 4 horas diarias (20 hrs semanales)."
+      ],
+      "benefits": [
+        "Acreditación y carta oficial de liberación de servicio social.",
+        "Beca de transporte mensual puntual.",
+        "Constancia de valor curricular por labor comunitaria.",
+        "Acceso libre a todos los programas de formación interna de la empresa."
+      ],
+      "matchingKeywords": [
+        "Servicio social",
+        "Comunicación asertiva",
+        "Trabajo en equipo",
+        "Liderazgo",
+        "Capacitación"
+      ]
+    },
+    {
+      "id": "vac-5",
+      "title": "Becario de Asistencia de Laboratorio y Análisis Clínico",
+      "companyId": "comp-3",
+      "companyName": "BioSalud Diagnósticos",
+      "category": "Becarios",
+      "jobType": "Medio tiempo",
+      "workMode": "Presencial",
+      "location": "Monterrey, N.L. (Zona San Jerónimo)",
+      "salary": "$7,800 MXN mensuales libres",
+      "academicLevel": "Estudiantes de Química, Medicina o Biología a partir de 5to semestre",
+      "experienceRequired": "Sin experiencia en el ramo privado. Prácticas de laboratorio escolar comprobables.",
+      "area": "Medicina, Salud y Biotecnología",
+      "publishedAt": "2026-11-13T08:30:00Z",
+      "isDemo": true,
+      "verifiedSource": true,
+      "description": "Aprende de especialistas en diagnóstico clínico de vanguardia. Participarás en la recepción de muestras, verificación de protocolos de bioseguridad y preparación de reactivos bajo supervisión estricta.",
+      "responsibilities": [
+        "Apoyo en el control de calidad interno de muestras biológicas.",
+        "Registro de resultados en el sistema de gestión hospitalario (LIMS).",
+        "Mantenimiento básico y calibración preventiva de instrumentos.",
+        "Atención cordial a pacientes en el área de recepción y toma rápida."
+      ],
+      "requirements": [
+        "Estudiante regular de Medicina, QFB, Bioquímica Clínica o afines.",
+        "Conocimiento estricto de normas de bioseguridad (NOM-007-SSA3).",
+        "Puntualidad rigurosa y ética profesional intachable.",
+        "Disponibilidad turno matutino (7:00 AM a 12:00 PM)."
+      ],
+      "benefits": [
+        "Apoyo económico mensual con pago quincenal.",
+        "Seguro contra accidentes escolares y equipo de protección personal completo.",
+        "Descuentos del 60% en estudios clínicos para familiares directos.",
+        "Posibilidad de contratación como Químico de Turno al egresar."
+      ],
+      "matchingKeywords": [
+        "Medicina",
+        "Salud",
+        "Normas de bioseguridad",
+        "Atención al detalle",
+        "Ética profesional"
+      ]
+    },
+    {
+      "id": "vac-6",
+      "title": "Asistente de Atracción de Talento y Cultura Organizacional (Primer Empleo)",
+      "companyId": "comp-4",
+      "companyName": "NovaRetail LATAM",
+      "category": "Primer empleo",
+      "jobType": "Tiempo completo",
+      "workMode": "Híbrido",
+      "location": "Querétaro, Qro.",
+      "salary": "$14,000 - $16,500 MXN mensuales brutos",
+      "academicLevel": "Recién graduados de Psicología Organizacional, Administración o RRHH",
+      "experienceRequired": "Cero años de experiencia formal requerida. Se valoran voluntariados o proyectos estudiantiles.",
+      "area": "Recursos Humanos y Desarrollo del Talento",
+      "publishedAt": "2026-11-11T12:00:00Z",
+      "isDemo": true,
+      "verifiedSource": true,
+      "description": "¿Te apasiona conectar con personas y ayudarles a encontrar su trabajo ideal? Buscamos a nuestro próximo talento de RRHH para apoyar en la publicación de ofertas, filtro curricular inclusivo, coordinación de entrevistas y programas de bienestar para nuevos ingresos.",
+      "responsibilities": [
+        "Publicar y difundir convocatorias en plataformas de empleo universitarias.",
+        "Realizar llamadas de contacto inicial y aplicación de filtros por competencias.",
+        "Coordinar agendas de entrevistas entre candidatos y líderes de área.",
+        "Apoyar en la logística del proceso de onboarding e inducción institucional."
+      ],
+      "requirements": [
+        "Licenciatura concluida en Psicología, Recursos Humanos, Administración o afín.",
+        "Excelente dicción, empatía y redacción impecable.",
+        "Gusto por las dinámicas grupales y atención a personas.",
+        "Manejo fluido de Google Workspace o Microsoft 365."
+      ],
+      "benefits": [
+        "Prestaciones de ley y superiores desde el primer día.",
+        "Horario flexible y esquema híbrido (2 días de home office por semana).",
+        "Seguro de gastos médicos menores y dental.",
+        "Día libre por cumpleaños y capacitaciones semanales en reclutamiento IT."
+      ],
+      "matchingKeywords": [
+        "Recursos humanos",
+        "Comunicación asertiva",
+        "Empatía",
+        "Onboarding",
+        "Organización",
+        "Google Workspace"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs-1",
+      "title": "Estrategias Clave para Conseguir tu Primer Empleo Profesional",
+      "category": "Preparación laboral",
+      "provider": "LABEXP Academy & Consultores de Empleabilidad MX",
+      "duration": "10 horas (4 módulos)",
+      "level": "Principiante / Sin experiencia",
+      "modality": "Autodirigido en línea",
+      "objectives": "Dotar al estudiante de técnicas para identificar ofertas que no pidan experiencia, comunicar logros escolares como valor laboral y superar la ansiedad en los primeros procesos de selección.",
+      "content": [
+        "Módulo 1: Desmitificando el mercado laboral para recién egresados.",
+        "Módulo 2: Cómo convertir proyectos universitarios y servicio social en competencias profesionales.",
+        "Módulo 3: Creación de un CV de alto impacto sin experiencia previa.",
+        "Módulo 4: Negociación de tu primer sueldo, contratos y prestaciones laborales en México."
+      ],
+      "isDemo": true,
+      "enrolled": true,
+      "progress": 65,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-2",
+      "title": "Excel y Hojas de Cálculo Profesionales para el Entorno Laboral",
+      "category": "Ofimática",
+      "provider": "Instituto de Competencias Digitales México",
+      "duration": "16 horas (5 módulos)",
+      "level": "Intermedio",
+      "modality": "100% en línea",
+      "objectives": "Dominar tablas dinámicas, funciones de búsqueda (BUSCARV, BUSCARX, INDICE), condicionales y automatización básica para cualquier puesto administrativo o técnico.",
+      "content": [
+        "Módulo 1: Fórmulas avanzadas y limpieza de bases de datos.",
+        "Módulo 2: Tablas dinámicas y segmentación interactiva.",
+        "Módulo 3: Visualización de datos y gráficos profesionales.",
+        "Módulo 4: Introducción a macros sencillas y atajos de productividad."
+      ],
+      "isDemo": true,
+      "enrolled": true,
+      "progress": 30,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-3",
+      "title": "Fundamentos de Git, GitHub y Flujos de Trabajo Colaborativo",
+      "category": "Ingeniería",
+      "provider": "Comunidad Abierta de Ingeniería de Software",
+      "duration": "12 horas (4 módulos)",
+      "level": "Principiante a Intermedio",
+      "modality": "Práctico con repositorio",
+      "objectives": "Aprender a versionar código, resolver conflictos en ramas, abrir Pull Requests profesionales y documentar repositorios con README atractivos para reclutadores.",
+      "content": [
+        "Módulo 1: Arquitectura de Git y comandos esenciales.",
+        "Módulo 2: Gitflow, ramas de trabajo y resolución de conflictos.",
+        "Módulo 3: GitHub para mostrar tu portafolio a empresas.",
+        "Módulo 4: GitHub Actions y automatización básica."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-4",
+      "title": "Inteligencia Artificial Aplicada a la Productividad Diaria",
+      "category": "Habilidades digitales",
+      "provider": "Centro de Innovación Tecnológica Joven",
+      "duration": "8 horas (3 módulos)",
+      "level": "Todos los niveles",
+      "modality": "En línea con talleres",
+      "objectives": "Aprender ingeniería de prompts ética para acelerar tareas de investigación, redacción de informes, síntesis de textos y análisis de datos sin vulnerar propiedad intelectual.",
+      "content": [
+        "Módulo 1: Principios y ética de los Modelos de Lenguaje.",
+        "Módulo 2: Estructuración de prompts efectivos para el trabajo.",
+        "Módulo 3: Automatización de flujos de trabajo cotidianos."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-5",
+      "title": "Liderazgo Joven y Gestión de Equipos de Alto Rendimiento",
+      "category": "Liderazgo",
+      "provider": "Academia Latinoamericana de Desarrollo Humano",
+      "duration": "14 horas (4 módulos)",
+      "level": "Intermedio",
+      "modality": "Casos prácticos",
+      "objectives": "Desarrollar habilidades para coordinar iniciativas, motivar a compañeros de trabajo, delegar con claridad y gestionar discrepancias con inteligencia emocional.",
+      "content": [
+        "Módulo 1: Liderazgo situacional y empatía activa.",
+        "Módulo 2: Gestión de desacuerdos constructivos.",
+        "Módulo 3: Retroalimentación efectiva basada en hechos."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-6",
+      "title": "Protocolos de Bioseguridad y Calidad en Servicios de Salud",
+      "category": "Medicina",
+      "provider": "Consorcio Médico Hospitalario Mexicano",
+      "duration": "18 horas (5 módulos)",
+      "level": "Universitario / Profesional",
+      "modality": "Clínico en línea",
+      "objectives": "Dominar las normas oficiales mexicanas de bioseguridad, manejo de RPBI (Residuos Peligrosos Biológico-Infecciosos) y ética en la atención a pacientes.",
+      "content": [
+        "Módulo 1: NOM-007-SSA3 y estándares de laboratorio clínico.",
+        "Módulo 2: Clasificación y embalaje seguro de RPBI.",
+        "Módulo 3: Humanismo médico y confidencialidad del expediente clínico."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-7",
+      "title": "Comunicación Asertiva y Trabajo en Equipo Multidisciplinario",
+      "category": "Trabajo en equipo",
+      "provider": "LABEXP Habilidades Blandas",
+      "duration": "8 horas (3 módulos)",
+      "level": "Principiante",
+      "modality": "Talleres interactivos",
+      "objectives": "Aprender a comunicar ideas con claridad, escuchar con atención genuina y coordinar tareas en entornos con diferentes perfiles profesionales.",
+      "content": [
+        "Módulo 1: Los 4 pilares de la asertividad profesional.",
+        "Módulo 2: Trabajo colaborativo en herramientas digitales.",
+        "Módulo 3: Dinámicas de toma de decisiones participativas."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-8",
+      "title": "Administración Básica de Proyectos y Metodologías Ágiles",
+      "category": "Administración",
+      "provider": "Centro de Gestión Empresarial",
+      "duration": "12 horas (4 módulos)",
+      "level": "Principiante",
+      "modality": "Autodirigido",
+      "objectives": "Aprender a desglosar proyectos en tareas medibles usando tableros Kanban, marcos Scrum y estimación de tiempos.",
+      "content": [
+        "Módulo 1: Introducción a la gestión por objetivos (OKRs).",
+        "Módulo 2: Ceremonias y artefactos Scrum (Backlog, Sprint, Daily).",
+        "Módulo 3: Uso de Trello y Jira para orden de tareas."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-9",
+      "title": "Finanzas Personales y Fiscales para tu Primer Sueldo",
+      "category": "Finanzas",
+      "provider": "Educación Financiera Joven",
+      "duration": "6 horas (3 módulos)",
+      "level": "Básico",
+      "modality": "En línea",
+      "objectives": "Entender cómo funciona el SAT (RFC, Constancia de Situación Fiscal), retenciones de ISR, AFORE, IMSS y presupuesto mensual de ahorro.",
+      "content": [
+        "Módulo 1: Tu recibo de nómina explicado línea por línea.",
+        "Módulo 2: El SAT sin miedo: trámites obligatorios del primer empleo.",
+        "Módulo 3: Fondo de emergencia e inversiones básicas reguladas."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-10",
+      "title": "Marketing Digital y Creación de Contenido Estratégico",
+      "category": "Marketing",
+      "provider": "Escuela de Medios y Mercadotecnia",
+      "duration": "15 horas (4 módulos)",
+      "level": "Intermedio",
+      "modality": "Teórico y Práctico",
+      "objectives": "Comprender los principios del embudo de conversión, gestión de comunidades digitales y métricas clave de rendimiento.",
+      "content": [
+        "Módulo 1: Anatomía de una estrategia de contenidos.",
+        "Módulo 2: Canales orgánicos vs pagados.",
+        "Módulo 3: Medición analítica y optimización de campañas."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-11",
+      "title": "Fundamentos de Atracción de Talento y Selección Inclusiva",
+      "category": "Recursos humanos",
+      "provider": "Asociación Mexicana de Gestión de Personas",
+      "duration": "10 horas (3 módulos)",
+      "level": "Principiante",
+      "modality": "Autodirigido",
+      "objectives": "Conocer los métodos modernos de reclutamiento por competencias y diseño de ofertas inclusivas sin sesgos.",
+      "content": [
+        "Módulo 1: Perfilado de puestos y descripción de competencias.",
+        "Módulo 2: Entrevistas por método STAR y rúbricas objetivas.",
+        "Módulo 3: Experiencia del candidato y retroalimentación empática."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-12",
+      "title": "Inglés B2 para Entrevistas Laborales y Negocios Globales",
+      "category": "Idiomas",
+      "provider": "Centro de Idiomas para Profesionales",
+      "duration": "20 horas (6 módulos)",
+      "level": "Intermedio (B1 a B2)",
+      "modality": "Clases grabadas y ejercicios de audio",
+      "objectives": "Perder el miedo a expresarte en inglés durante una entrevista, formular respuestas con el método STAR y redactar correos de seguimiento impecables.",
+      "content": [
+        "Módulo 1: Introducción personal fluida ('Tell me about yourself').",
+        "Módulo 2: Expresando logros y proyectos con verbos de acción.",
+        "Módulo 3: Manejo de preguntas técnicas y situaciones hipotéticas.",
+        "Módulo 4: Business email etiquette y seguimiento profesional."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "crs-13",
+      "title": "Herramientas Tecnológicas y Productividad en la Nube",
+      "category": "Herramientas tecnológicas",
+      "provider": "LABEXP Tech Skills",
+      "duration": "10 horas (3 módulos)",
+      "level": "Todos los niveles",
+      "modality": "Práctico",
+      "objectives": "Dominar Notion, Slack, Google Drive corporativo y Canva para diseño de presentaciones ejecutivas que impresionen a tu equipo.",
+      "content": [
+        "Módulo 1: Gestión del conocimiento personal y notas con Notion.",
+        "Módulo 2: Colaboración sincrónica y asincrónica en Slack.",
+        "Módulo 3: Presentaciones visuales limpias para reportes de avance."
+      ],
+      "isDemo": true,
+      "enrolled": false,
+      "progress": 0,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "savedJobs": [
+    {
+      "id": "save-1",
+      "userId": "usr-cand-1",
+      "vacancyId": "vac-2",
+      "savedAt": "2026-11-13T14:00:00Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-1794851560306",
+      "userId": "usr-cand-1",
+      "vacancyId": "vac-3",
+      "vacancyTitle": "Analista Trainee de Datos y Riesgos Financieros",
+      "companyId": "comp-2",
+      "companyName": "Grupo Financiero Aurora",
+      "status": "Entrevista programada",
+      "appliedAt": "2026-11-16T17:52:40.306Z",
+      "updatedAt": "2026-11-16T17:52:40.325Z",
+      "candidateName": "Sofía Ramírez Galindo",
+      "candidateEmail": "sofia.ramirez@alumnos.unam.mx",
+      "candidateUniversity": "Universidad Nacional Autónoma de México (UNAM) (Ingeniería en Computación)",
+      "coverNote": "Me interesa mucho el análisis financiero y he tomado materias de probabilidad y finanzas corporativas.",
+      "interviewScheduledFor": "2026-11-25T16:00:00Z",
+      "interviewType": "Videollamada técnica",
+      "recruiterNotes": "Perfil cuantitativo sólido. Se cita a primera entrevista técnica con Director de Riesgos."
+    },
+    {
+      "id": "app-1",
+      "userId": "usr-cand-1",
+      "vacancyId": "vac-1",
+      "vacancyTitle": "Desarrollador Junior / Trainee de Frontend Web",
+      "companyId": "comp-1",
+      "companyName": "TechInnova México",
+      "status": "Entrevista programada",
+      "appliedAt": "2026-11-11T10:30:00Z",
+      "updatedAt": "2026-11-15T16:00:00Z",
+      "candidateName": "Sofía Ramírez Galindo",
+      "candidateEmail": "sofia.ramirez@alumnos.unam.mx",
+      "candidateUniversity": "UNAM (Ingeniería en Computación)",
+      "coverNote": "Hola equipo de TechInnova, me entusiasma mucho esta oportunidad ya que durante mis proyectos universitarios he desarrollado interfaces con React y JavaScript. Me interesa profundizar mi aprendizaje con su equipo.",
+      "interviewScheduledFor": "2026-11-20T11:00:00Z",
+      "interviewType": "Entrevista por competencias técnica inicial (Videollamada)",
+      "recruiterNotes": "Excelente perfil académico y proyectos extracurriculares demostrables. Se programa primera entrevista con Tech Lead."
+    },
+    {
+      "id": "app-2",
+      "userId": "usr-cand-1",
+      "vacancyId": "vac-4",
+      "vacancyTitle": "Servicio Social en Innovación Digital y Alfabetización Tecnológica",
+      "companyId": "comp-1",
+      "companyName": "TechInnova México",
+      "status": "En revisión",
+      "appliedAt": "2026-11-14T11:00:00Z",
+      "updatedAt": "2026-11-14T15:20:00Z",
+      "candidateName": "Sofía Ramírez Galindo",
+      "candidateEmail": "sofia.ramirez@alumnos.unam.mx",
+      "candidateUniversity": "UNAM (Ingeniería en Computación)",
+      "coverNote": "Cuento con el 80% de créditos aprobados y experiencia voluntaria en alfabetización digital.",
+      "interviewScheduledFor": null,
+      "interviewType": null,
+      "recruiterNotes": "En espera de validación de carta de créditos universitarios."
+    }
+  ],
+  "curriculums": [
+    {
+      "id": "cv-cand-1",
+      "userId": "usr-cand-1",
+      "title": "Currículum Sofía Ramírez - Desarrollo de Software",
+      "template": "modern-purple",
+      "updatedAt": "2026-11-15T18:00:00Z",
+      "data": {
+        "personal": {
+          "fullName": "Sofía Ramírez Galindo",
+          "headline": "Estudiante de Ingeniería en Computación | UNAM",
+          "email": "sofia.ramirez@alumnos.unam.mx",
+          "phone": "+52 55 4123 9876",
+          "location": "Ciudad de México",
+          "github": "github.com/sofiaramirez-dev",
+          "linkedin": "linkedin.com/in/sofia-ramirez-tech",
+          "summary": "Estudiante de 8vo semestre de Ingeniería en Computación orientada al desarrollo web frontend y análisis de datos. Capacidad comprobada para colaborar en equipo mediante metodologías ágiles y construir soluciones de software funcionales a través de proyectos académicos y actividades de liderazgo estudiantil. Sin historial laboral en empresas, pero con amplio compromiso técnico y aprendizaje acelerado."
+        },
+        "education": [
+          {
+            "institution": "Universidad Nacional Autónoma de México (Facultad de Ingeniería)",
+            "degree": "Licenciatura en Ingeniería en Computación",
+            "period": "2023 - 2027 (En curso - 8vo semestre)",
+            "gpa": "Promedio acumulado: 9.2 / 10.0"
+          }
+        ],
+        "academicProjects": [
+          {
+            "name": "Portal de Monitoreo Comunitario y Reciclaje Urbano",
+            "role": "Líder de desarrollo Frontend y Maquetación",
+            "period": "Enero - Junio 2026",
+            "achievements": [
+              "Diseño de interfaz responsive para geolocalización de puntos de acopio de residuos con Leaflet Maps API.",
+              "Implementación de arquitectura de componentes reutilizables con JavaScript moderno.",
+              "Proyecto reconocido con mención honorífica en la cátedra de Ingeniería de Software de la UNAM."
+            ]
+          },
+          {
+            "name": "Sistema de Gestión de Préstamos para Biblioteca Universitaria",
+            "role": "Desarrolladora Full Stack (Colaborativo)",
+            "period": "Agosto - Diciembre 2025",
+            "achievements": [
+              "Modelado de base de datos relacional normalizada en SQLite y desarrollo de vistas en Python.",
+              "Reducción del tiempo de registro manual de préstamos en un 60% durante la prueba piloto."
+            ]
+          }
+        ],
+        "skills": {
+          "technical": [
+            "JavaScript (ES6+)",
+            "Python",
+            "React",
+            "HTML5 & CSS3",
+            "Bases de Datos SQL",
+            "Git y GitHub",
+            "REST APIs"
+          ],
+          "soft": [
+            "Trabajo en equipo multidisciplinario",
+            "Pensamiento analítico y resolución de problemas",
+            "Comunicación asertiva",
+            "Adaptabilidad al cambio"
+          ]
+        },
+        "languages": [
+          {
+            "name": "Español",
+            "proficiency": "Nativo"
+          },
+          {
+            "name": "Inglés",
+            "proficiency": "B2 (Intermedio-Avanzado, lectura y redacción técnica fluida)"
+          }
+        ],
+        "extracurriculars": [
+          {
+            "organization": "Rama Estudiantil IEEE / ACM UNAM",
+            "role": "Coordinadora de Talleres Técnicos",
+            "period": "2025 - Presente",
+            "details": "Organización y facilitación de talleres prácticos de introducción a la programación para alumnos de primeros semestres."
+          },
+          {
+            "organization": "Voluntariado Comunitario de Alfabetización Digital",
+            "role": "Instructora Voluntaria",
+            "period": "Verano 2025",
+            "details": "Capacitación a adultos mayores en el uso seguro de internet y trámites digitales."
+          }
+        ]
+      }
+    }
+  ],
+  "interviewsHistory": [
+    {
+      "id": "int-hist-1",
+      "userId": "usr-cand-1",
+      "date": "2026-11-14T17:30:00Z",
+      "jobRole": "Desarrollador Junior / Trainee de Frontend Web",
+      "interviewType": "primer_empleo",
+      "difficulty": "media",
+      "questionsAnswered": 4,
+      "scores": {
+        "clarity": 8.5,
+        "coherence": 8.8,
+        "communication": 8.5,
+        "argumentation": 8,
+        "problemSolving": 8.2,
+        "skillsIdentification": 8.7,
+        "jobRelevance": 8.6,
+        "overall": 8.5
+      },
+      "strengths": [
+        "Excelente articulación de proyectos universitarios como evidencia de competencia técnica.",
+        "Uso natural de terminología de desarrollo de software y metodologías ágiles.",
+        "Honestidad profesional al reconocer que busca su primer empleo formal con actitud de aprendizaje."
+      ],
+      "improvements": [
+        "Estructurar las respuestas utilizando con mayor firmeza el método STAR (Situación, Tarea, Acción, Resultado medible).",
+        "Aportar cifras o impactos concretos de los proyectos en lugar de descripciones generales."
+      ],
+      "recommendations": [
+        "Menciona explícitamente qué aprendiste de los errores cometidos en proyectos escolares.",
+        "Prepara de antemano dos preguntas sobre la cultura de aprendizaje de la empresa para formular al reclutador al final."
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1794851560325",
+      "userId": "usr-cand-1",
+      "title": "Actualización de postulación: Analista Trainee de Datos y Riesgos Financieros",
+      "message": "El estado de tu proceso en Grupo Financiero Aurora cambió a: \"Entrevista programada\".",
+      "type": "interview",
+      "read": false,
+      "createdAt": "2026-11-16T17:52:40.325Z",
+      "link": "applications"
+    },
+    {
+      "id": "notif-1794851560307",
+      "userId": "usr-cand-1",
+      "title": "Postulación enviada: Analista Trainee de Datos y Riesgos Financieros",
+      "message": "Tu perfil fue remitido exitosamente a Grupo Financiero Aurora. Puedes monitorear el estado en 'Mis postulaciones'.",
+      "type": "application",
+      "read": false,
+      "createdAt": "2026-11-16T17:52:40.307Z",
+      "link": "applications"
+    },
+    {
+      "id": "notif-1",
+      "userId": "usr-cand-1",
+      "title": "¡Entrevista programada con TechInnova México!",
+      "message": "Tu postulación para 'Desarrollador Junior / Trainee de Frontend Web' avanzó. Entrevista agendada para el 20 de noviembre a las 11:00 AM.",
+      "type": "interview",
+      "read": false,
+      "createdAt": "2026-11-15T16:05:00Z",
+      "link": "applications"
+    },
+    {
+      "id": "notif-2",
+      "userId": "usr-cand-1",
+      "title": "Nueva vacante recomendada para tu perfil",
+      "message": "Se publicó 'Practicante de Pruebas de Software (QA Tester Becario)' con 92% de compatibilidad con tus competencias.",
+      "type": "vacancy",
+      "read": false,
+      "createdAt": "2026-11-12T11:05:00Z",
+      "link": "jobs"
+    },
+    {
+      "id": "notif-3",
+      "userId": "usr-cand-1",
+      "title": "Avance en tu curso de Preparación Laboral",
+      "message": "Completaste el 65% de 'Estrategias Clave para Conseguir tu Primer Empleo Profesional'. ¡Sigue así!",
+      "type": "course",
+      "read": true,
+      "createdAt": "2026-11-13T19:00:00Z",
+      "link": "courses"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1",
+      "action": "COMPANY_VERIFIED",
+      "adminId": "usr-adm-1",
+      "target": "comp-1 (TechInnova México)",
+      "details": "Documentación fiscal y acta constitutiva validada satisfactoriamente.",
+      "timestamp": "2026-08-20T12:00:00Z"
+    },
+    {
+      "id": "log-2",
+      "action": "JOB_MODERATED",
+      "adminId": "usr-adm-1",
+      "target": "vac-1",
+      "details": "Vacante aprobada bajo el criterio de inclusión para jóvenes sin experiencia laboral.",
+      "timestamp": "2026-11-10T09:15:00Z"
+    }
+  ]
+}
